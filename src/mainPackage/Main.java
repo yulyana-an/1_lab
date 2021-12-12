@@ -56,23 +56,22 @@ public class Main {
     }
 
     static void printFoods(Food[] breakfast){
-        int c = 0;
-        int a = 0;
-        int p = 0;
+        int cheeseCount = 0;
+        int appleCount = 0;
+        int teaCount = 0;
         for(int i = 0; i < breakfast.length; i++) { //сколько раз были употреблены все продукты
-
             if(breakfast[i] instanceof Cheese){
-                c++;
+                cheeseCount++;
             }
             else if (breakfast[i] instanceof Apple){
-                a++;
+                appleCount++;
             }
             else if (breakfast[i] instanceof Tea){
-                p++;
+                teaCount++;
             }
         }
-        System.out.println("CЫР - " + c);
-        System.out.println("ЯБЛОКО - " + a);
-        System.out.println("ЧАЙ - " + p);
+        System.out.println("CЫР - " + cheeseCount);
+        System.out.println("ЯБЛОКО - " + appleCount);
+        System.out.println("ЧАЙ - " + teaCount);
     }
 }
