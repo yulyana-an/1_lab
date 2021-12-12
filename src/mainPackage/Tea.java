@@ -5,7 +5,7 @@ public class Tea extends Food {
     private String size;
     public Tea(String size) {
 // Вызвать конструктор предка, передав ему имя класса
-        super("чай");
+        super("Чай");
 // Инициализировать размер яблока
         this.size = size;
     }
@@ -34,7 +34,7 @@ public class Tea extends Food {
     // Переопределѐнная версия метода toString(), возвращающая не только
 // название продукта, но и его размер
     public String toString() {
-        return super.toString() + " размера '" + size.toUpperCase() + "'";
+        return super.toString() + " цвета '" + size.toUpperCase() + "'";
     }
 }
 
